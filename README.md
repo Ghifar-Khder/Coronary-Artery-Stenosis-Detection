@@ -103,6 +103,10 @@ This repository contains the inference app and trained model. The dataset and th
 
 The model predicts one bounding box per frame. It does not measure the percentage of artery narrowing or provide a separate no-stenosis decision. The dataset contains selected frames showing stenotic vessels, so those data alone do not establish how the model performs on normal angiograms.
 
-## Author
+## Contact
 
-[Ghifar Khder](https://ghifar-khder.github.io/portfolio/)
+- **Developer:** Ghifar Khder
+- **Email:** [ghifarkhder2000@gmail.com](mailto:ghifarkhder2000@gmail.com)
+- **LinkedIn:** [www.linkedin.com/in/ghifar-khder](https://www.linkedin.com/in/ghifar-khder)
+- **Repository:** [https://github.com/Ghifar-Khder/Coronary-Artery-Stenosis-Detection](https://github.com/Ghifar-Khder/Coronary-Artery-Stenosis-Detection)
+- Portfolio: [Ghifar Khder](https://ghifar-khder.github.io/portfolio/)
