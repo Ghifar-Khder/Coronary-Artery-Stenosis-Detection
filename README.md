@@ -14,8 +14,6 @@ This project uses a ResNet101V2-based model to locate coronary stenosis in X-ray
 
 ## Methods
 
-The following summary is based on Chapter 4 (Methods) of the project report.
-
 ### Dataset and preparation
 
 The dataset contains **8,325 grayscale angiography frames from 100 patients**, with image sizes ranging from 512 × 512 to 1000 × 1000 pixels. The images were collected at the Research Institute for Complex Problems of Cardiovascular Diseases in Kemerovo, Russia, using Siemens Coroscop and GE Healthcare Innova systems.
