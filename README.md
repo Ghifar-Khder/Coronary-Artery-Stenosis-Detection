@@ -32,10 +32,11 @@ Image sequences were also grouped and ordered by filename, then converted into v
 
 ### Model and training
 
-The model uses a pretrained **ResNet101V2** backbone without its original classification head. The localization layers described in the report are:
+The model uses a pretrained **ResNet101V2** backbone without its original classification head. The backbone is followed by a convolutional layer, global average pooling, a dense layer, and a bounding box regression output, in this order:
 
 | Layer | Configuration |
 | --- | --- |
+| ResNet101V2 backbone | Pretrained feature extractor without its original classification head |
 | Convolution | 3 × 3 kernel, 1,024 filters |
 | Global average pooling | Converts feature maps into a feature vector |
 | Dense layer | 512 neurons |
@@ -96,11 +97,11 @@ The file `stenosis_detector_v18.keras` must contain the downloaded model, rather
 | `requirements.txt` | Python dependencies |
 | `.streamlit/` | App configuration |
 
-This repository contains the inference app and trained model. The dataset preparation and training process summarized above are described in the project report; their scripts and the dataset are not included here.
+This repository contains the inference app and trained model. The dataset and the scripts for data preparation and training are not included here.
 
 ## Scope
 
-The model predicts one bounding box per frame. It does not measure the percentage of artery narrowing or provide a separate no-stenosis decision. The dataset described in the report contains selected frames showing stenotic vessels, so those data alone do not establish how the model performs on normal angiograms.
+The model predicts one bounding box per frame. It does not measure the percentage of artery narrowing or provide a separate no-stenosis decision. The dataset contains selected frames showing stenotic vessels, so those data alone do not establish how the model performs on normal angiograms.
 
 ## Author
 
