@@ -105,4 +105,4 @@ The model predicts one bounding box per frame. It does not measure the percentag
 
 ## Author
 
-[Ghifar Khder — Portfolio](https://ghifar-khder.github.io/portfolio/)
+[Ghifar Khder](https://ghifar-khder.github.io/portfolio/)
